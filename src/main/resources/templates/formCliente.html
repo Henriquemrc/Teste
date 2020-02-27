@@ -1,0 +1,17 @@
+<html xmlns="http://www.w3.org/1999/xhtml" 
+    xmlns:th="http://www.thymeleaf.org" 
+    xmlns:sec="http://www.thymeleaf.org/thymeleaf-extras-springsecurity3"
+    xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<html>
+    <head>
+        <title></title>
+    </head>
+    <html>
+        <form action="salvarCliente" method="POST" th:object="${cliente}">
+            Nome:<input type="text" name="nome" th:field="*{nome}"><br>
+            Email:<input type="email" name="email" th:field="*{email}"><br>
+            Telefone:<input type="text" name="telefone" th:field="*{telefone}"><br>
+            <input type="submit" value="Enviar">
+        </form>
+    </html>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Teste</title>
+</head>
+
+<body>
+  	<div align="center" th:each="produto : ${produto}">
+  		<table>
+  			<tr>
+  				<td>
+  					<span th:text="${produto.nome}"></span>
+  				</td>
+  				<td>
+  					<span th:text="${produto.preco}"></span>
+  				</td>
+  			</tr>
+  			<tr>
+  				<td>
+  					<span th:text="${produto.descricao}"></span>
+
+  				</td>
+  			</tr>
+  		</table>  		
+  	</div>
+  
+  
+</body>
+</html>
